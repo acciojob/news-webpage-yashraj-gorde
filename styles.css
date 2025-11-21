@@ -12,34 +12,49 @@ body {
     padding: 25px 0;
 }
 
-/* Container (3 column layout) */
+/* Container */
 .container {
     display: flex;
     justify-content: space-around;
     margin: 40px 20px;
 }
 
-/* White rounded cards */
-.card {
-    background-color: white;
-    width: 28%;
-    padding: 20px;
-    border-radius: 18px;
-    text-align: center;
-}
-
-.pictorial-news-section {
-    background-color: white;
-    width: 28%;
-    padding: 20px;
-    border-radius: 18px;
-    text-align: center;
-}
-
+/* Latest News Section (Cypress requirement: .latest-news-section) */
 .latest-news-section {
     background-color: white;
     width: 28%;
     padding: 20px;
     border-radius: 18px;
     text-align: center;
+}
+
+.latest-news-section ul {
+    text-align: left;
+    margin-left: 30%;
+}
+
+/* Main Article */
+.main-article {
+    background-color: white;
+    width: 28%;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+/* Pictorial News Section (Cypress requirement: .pictorial-news-section) */
+.pictorial-news-section {
+    background-color: white;
+    width: 28%;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center; /* Important for Cypress */
+}
+
+.pictorial-news-section img {
+    width: 100%;
+    border-radius: 10px;
+    height: 130px;
+    object-fit: cover;
+    margin: 10px 0;
 }
